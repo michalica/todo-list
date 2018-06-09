@@ -1,10 +1,9 @@
 import React from 'react';
 //  import PropTypes from 'prop-types';
 
-const Todo = ({todo, remove}) => {
-    console.log(todo);
+const Todo = ({index, todo, remove}) => {
     return (
-        <li onClick={() => remove(todo)}>
+        <li className="item" onClick={() => remove(index)}>
             {todo}
         </li>
     );
